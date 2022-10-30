@@ -6,7 +6,6 @@ import ComicCard from "./ComicCard";
 
 
 const ComicsList = () => {
-
     const { data, error } = useSWR('http://localhost:8000/api/comics', fetcher);
 
     if (error ) {

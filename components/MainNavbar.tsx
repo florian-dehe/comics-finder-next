@@ -1,14 +1,15 @@
 import React from "react";
 import type { NextComponentType } from "next"
-import { Navbar, Text, Input } from "@nextui-org/react";
+import { Navbar, Text, Input, Link } from "@nextui-org/react";
 
 const MainNavbar: NextComponentType = () => {
-
     return (
         <Navbar variant="sticky">
             <Navbar.Brand>
                 <Text h3 b color="inherit" hideIn="xs">
-                    Comics Finder
+                    <Link color="text" href="/">
+                        Comics Finder
+                    </Link>
                 </Text>
             </Navbar.Brand>
             <Navbar.Content hideIn="xs">
@@ -23,9 +24,9 @@ const MainNavbar: NextComponentType = () => {
                 </Navbar.Item>
             </Navbar.Content>
             <Navbar.Content>
-                
+
             </Navbar.Content>
-        </Navbar>
+        </Navbar >
     )
 }
 

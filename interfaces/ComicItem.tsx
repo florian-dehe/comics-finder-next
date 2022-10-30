@@ -6,7 +6,7 @@ interface ComicItemData {
     description: string,
     isbn: number,
     pages: number
-    release_date: Date
+    release_date: string
     serie: {
       id: number,
       serie_name: string
